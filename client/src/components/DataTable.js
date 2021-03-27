@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
-import "./App.css";
+// import "./App.css";
 import Numeral from "numeral";
 import { QuestionAnswerSharp } from "@material-ui/icons";
 

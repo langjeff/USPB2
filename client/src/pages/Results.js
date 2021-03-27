@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import USPB_LOGO from "../images/USPB_LOGO.png";
+// import USPB_LOGO from "../images/USPB_LOGO.png";
 import DataTable from "../components/DataTable";
-import "./App.css";
+// import "./App.css";
 import API from "../utils/API";
 
 function Results() {
@@ -24,7 +24,7 @@ function Results() {
     <div className="container">
       <div className="logo">
         <img
-          src={USPB_LOGO}
+          // src={USPB_LOGO}
           alt="Uncle Sam's Piggy Bank Logo"
           className="Qlogo"
         />

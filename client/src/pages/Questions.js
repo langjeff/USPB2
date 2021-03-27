@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import USPB_LOGO from "../images/USPB_LOGO.png";
+// import USPB_LOGO from "../images/USPB_LOGO.png";
 import Card from "../components/Card";
-import "./App.css";
+// import "./App.css";
 import API from "../utils/API";
-import Login from "../components/Login/index";
-import History from "../utils/history";
+// import Login from "../components/Login/index";
+// import History from "../utils/history";
 
 function Question() {
   const [questions, setQuestions] = useState([]);
@@ -25,7 +25,7 @@ function Question() {
     <div className="container">
       <div className="logo">
         <img
-          src={USPB_LOGO}
+          // src={USPB_LOGO}
           className="Qlogo"
           alt="Uncle Sam's Piggy Bank Logo"
           align="center"

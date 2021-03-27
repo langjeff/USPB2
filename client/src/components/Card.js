@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import TextField from "@material-ui/core/TextField";
-import Login from "../components/Login/index";
+// import Login from "../components/Login/index";
 import History from "../utils/history";
 import API from "../utils/API";
 import NumberFormat from "react-number-format";
