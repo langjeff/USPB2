@@ -1,7 +1,7 @@
 import API from "../utils/API";
 import React, { useState, useEffect } from "react";
 // import USPB_LOGO from "../images/USPB_LOGO.png";
-import Grid from "../components/grid";
+import Grid from "../components/Grid";
 // import Login from "../components/Login";
 // import Logout from "../components/Logout";
 // import "./App.css";
