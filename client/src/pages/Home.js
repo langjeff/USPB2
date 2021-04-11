@@ -49,8 +49,8 @@ const InfoBox = styled.h2`
 
 const StyledButton = styled(Button)`
   font-size: 1.5rem;
-  background-color: ${(props) => props.theme.palette.lightBlue};
-  color: ${(props) => props.theme.palette.darkBlue};
+  background-color: ${(props) => props.theme.palette.green};
+  color: ${(props) => props.theme.palette.mediumGray};
   font-family: ${(props) => props.theme.typography.menu};
   margin: 1rem auto;
   padding: 1rem;

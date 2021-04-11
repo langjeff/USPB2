@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
-// import USPB_LOGO from "../images/USPB_LOGO.png";
 import Card from "../components/Card";
-// import "./App.css";
 import API from "../utils/API";
-// import Login from "../components/Login/index";
-// import History from "../utils/history";
+import Slider from "@material-ui/core/Slider";
+import History from "../utils/history";
+import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
+import ArrowRight from "@material-ui/icons/ArrowRight";
+import styled, { css } from "styled-components";
+import Navigation from "../components/Appbar";
+
+//* styling
+const StyledBox = styled(Box)`
+  margin: 5px;
+  height: 100px;
+`;
 
 function Question() {
+  // declaring a prop variable to pass into components
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
@@ -22,21 +32,30 @@ function Question() {
   };
 
   return (
-    <div className="container">
-      <div className="logo">
-        <img
-          // src={USPB_LOGO}
-          className="Qlogo"
-          alt="Uncle Sam's Piggy Bank Logo"
-          align="center"
-        />
-      </div>
-
-      <div>
-        <Card question={questions} />
-      </div>
-    </div>
+    <StyledBox>
+      <Slider
+        orientation="vertical"
+        defaultValue={30}
+        aria-labelledby="vertical-slider"
+      />
+    </StyledBox>
   );
 }
 
 export default Question;
+
+//! prior code for render
+// <div className="container">
+//   <div className="logo">
+//     <img
+//       // src={USPB_LOGO}
+//       className="Qlogo"
+//       alt="Uncle Sam's Piggy Bank Logo"
+//       align="center"
+//     />
+//   </div>
+
+//   <div>
+//     <Card question={questions} />
+//   </div>
+// </div>

@@ -18,37 +18,51 @@ import FedIcon from "./icon";
 // import { ReactComponent as MyIcon } from "./icon.svg"
 
 const StyledNav = styled(AppBar)`
+  flex: 1;
   position: static;
   background-color: ${(props) => props.theme.palette.mediumBlue};
   color: ${(props) => props.theme.palette.mediumGray};
   font-family: ${(props) => props.theme.typography.menu};
   min-height: 75px;
-  left: auto;
-  right: 0;
+  /* left: auto; */
+  /* right: 0; */
+  display: flex;
 `;
 
 const MenuLink = styled.h3`
+  flex: 1;
+  display: flex;
   font-size: 1em;
   padding: 1em;
   line-height: auto;
   text-align: center;
   color: ${(props) => props.theme.palette.mediumGray};
   font-family: ${(props) => props.theme.typography.MenuItem};
+  justify-content: flex-end;
+`;
+
+const RightSpan = styled.span`
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 `;
 
 export default function Navigation() {
   return (
     <StyledNav>
       <Toolbar>
-        <IconButton>
+        <IconButton spacing={3}>
           <FedIcon />
         </IconButton>
-        <IconButton>
-          <MenuLink>Log In</MenuLink>
-        </IconButton>
-        <IconButton>
-          <MenuLink>Top Budgets</MenuLink>
-        </IconButton>
+        <RightSpan>
+          {" "}
+          <IconButton>
+            <MenuLink>Log In</MenuLink>
+          </IconButton>
+          <IconButton>
+            <MenuLink>Top Budgets</MenuLink>
+          </IconButton>
+        </RightSpan>
       </Toolbar>
     </StyledNav>
   );
