@@ -15,6 +15,18 @@ const StyledBox = styled(Box)`
   height: 100px;
 `;
 
+const StyledSlider = styled(Slider)`
+  width: 100px;
+  .MuiSlider-rail {
+    width: 100px;
+    border-radius: 10;
+  }
+  .MuiSlider-track {
+    width: 100px;
+    border-radius: 10;
+  }
+`;
+
 function Question() {
   // declaring a prop variable to pass into components
   const [questions, setQuestions] = useState([]);
@@ -33,7 +45,7 @@ function Question() {
 
   return (
     <StyledBox>
-      <Slider
+      <StyledSlider
         orientation="vertical"
         defaultValue={30}
         aria-labelledby="vertical-slider"
